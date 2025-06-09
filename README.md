@@ -1,2 +1,2 @@
-# nmm_inhibitory_electrical
-nmm_inhibitory_electrical
+# Role of gap junctions and clustered connectivity in emergent synchronization patterns of inhibitory neuronal networks
+Source code
