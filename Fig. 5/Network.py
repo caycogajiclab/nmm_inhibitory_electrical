@@ -15,11 +15,11 @@ BIGGER_SIZE = 20
 
 plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
-plt.rc('axes', labelsize=20)    # fontsize of the x and y labels
-plt.rc('xtick', labelsize=MEDIUM_SIZE)    # fontsize of the tick labels
-plt.rc('ytick', labelsize=MEDIUM_SIZE)    # fontsize of the tick labels
+plt.rc('axes', labelsize=20)             # fontsize of the x and y labels
+plt.rc('xtick', labelsize=MEDIUM_SIZE)   # fontsize of the tick labels
+plt.rc('ytick', labelsize=MEDIUM_SIZE)   # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
-plt.rc('figure', titlesize=BIGGER_SIZE)   # fontsize of the figure title
+plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 
 class QIFNetwork() :
@@ -205,11 +205,6 @@ class QIFNetwork() :
             self.s_file.write(f'{np.round(s, 5)}, ')
             self.z_file.write(f'{np.round(z, 5)}, ')
 
-            #spikes = (v[1:-1] < self.VP) & (v[2:] >= self.VP)
-            #events = [np.where(s)[0] for s in spikes.T]
-            #for el in events :
-                #self.raster_file.write(f'{t}  {el}\n')
-
         self.v_file.close()
         self.r_file.close()
         self.s_file.close()
@@ -311,7 +306,6 @@ class QIFNetwork() :
 
         #ax[1].legend(loc='upper right')
 
-        #plt.suptitle('Network of 10e4 electrically and chemically coupled neurons')
         plt.tight_layout()
         fig.align_ylabels(ax)
         plt.subplots_adjust(hspace=0.5)

@@ -1,10 +1,7 @@
 import Network as Ntw
 import numpy as np
 
-# For a=0.5, vr=-33, vp=46, g=1.2, J=-5, tau_s=1.215*tau_m*1e-2, eta_mea=1, delta=0.3
-
 # Parameters
-#T = 140
 T = 90
 STEP = 1e-3
 
