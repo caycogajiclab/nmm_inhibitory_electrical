@@ -58,5 +58,4 @@ ax.set_ylabel(r'$v_{avg}$', labelpad=20)
 ax.set_zlabel(r'$s$', labelpad=15)
 
 #plt.savefig('3D_focus.png', dpi=300)
-
 plt.show()
